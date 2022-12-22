@@ -12,58 +12,20 @@ body{
 .biru{
 	position: absolute;
 	bottom: 0;
-	left: 64%;
-	height: 150%;
+	right: 0;
+	height: 100%;
 	z-index: -1;
 }
 
-.btn-box {
-	width: 250px;
-	margin: 35px auto;
+.logo{
 	position: absolute;
-	top: 10%;
-	left: 35%;
-	border-radius: 30px;
-}
-
-.toogle-btn{
-	padding: 20px 10px;
-	cursor: pointer;
-	background: transparent;
-	border: 0;
-	outline: none;
-	position: relative;
-	font-size: large;
-	font-family: "Poppins", sans-serif;
-}
-
-.toogle-btn1{
-	padding: 20px 10px;
-	cursor: pointer;
-	background: transparent;
-	border: 0;
-	outline: none;
-	position: relative;
-	font-size: large;
-	font-family: "Poppins", sans-serif;
-	color: #0D4C92;
-	text-align: center;
-}
-
-#btns {
-	top: 0;
-	left: 0;
-	position: absolute;
-	width: 130px;
-	height: 100%;
-	background: #0D4C92;
-	transition: .5s;
-	border-radius: 30px;
+	top: 10;
+	right: 30;
 }
 
 .container{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap :7rem;
@@ -72,65 +34,37 @@ body{
 
 .img{
 	display: flex;
-	justify-content: flex-start;
+	position: absolute;
+	top: 100px;
+	right: 200px;
+	justify-content: flex-end;
 	align-items: center;
-	position: absolute;
-	right: 240px;
-	top: 40px;
-}
-
-.logo {
-	position: absolute;
-	left: 70px;
-	top: 20px;
-	width: 7%;
-	height: 12%;
-}
-
-.txt-logo {
-	position: absolute;
-	left: 200px;
-	top: 30px;
-	color: #0D4C92;
-	font-size: 30px;
-
-}
-
-.forgot {
-	position: absolute;
-	top: 67%;
-	left: 25%;
-	color: #D9D9D9;
 }
 
 .login-content{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: center;
-	text-align:left;
-	position: absolute;
-	left: 170px;
-	top: 170px;
+	text-align: center;
 }
 
 .img img{
-	width: 600px;
+	width: 500px;
 }
 
 form{
 	width: 360px;
 }
 
+.login-content img{
+    height: 100px;
+}
 
 .login-content h2{
 	margin: 15px 0;
-	color: #0D4C92;
+	color: #333;
 	text-transform: uppercase;
-	font-size:40px;
-}
-
-.h3 {
-	color: rgba(0, 0, 0, 0.1);
+	font-size: 2.9rem;
 }
 
 .login-content .input-div{
@@ -139,17 +73,18 @@ form{
     grid-template-columns: 7% 93%;
     margin: 25px 0;
     padding: 5px 0;
-    border-bottom: 2px solid #0D4C92;
+    border-bottom: 2px solid #d9d9d9;
 }
 
+.login-content .input-div.one{
+	margin-top: 0;
+}
 
 .i{
 	color: #d9d9d9;
 	display: flex;
 	justify-content: right;
 	align-items: center;
-	width: 21;
-	height: 16;
 }
 
 .i i{
@@ -166,7 +101,7 @@ form{
 	left: 10px;
 	top: 50%;
 	transform: translateY(-50%);
-	color: #59C1BD;
+	color: #999;
 	font-size: 18px;
 	transition: .3s;
 }
@@ -214,7 +149,7 @@ form{
 	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
 	color: #555;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'poppins', sans-serif;
 }
 
 .input-div.pass{
@@ -235,15 +170,13 @@ a:hover{
 }
 
 .btn{
-	position: absolute;
-	top: 400px;
 	display: block;
 	width: 100%;
 	height: 50px;
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(155.62deg, #0D4C92 -28.56%, #0D4C92 123.12%, #0D4C92 123.12%);
+	background: linear-gradient(155.62deg, #0D4C92 -28.56%, #0D4C92 123.12%, #0D4C92 123.12%);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;
@@ -252,31 +185,9 @@ a:hover{
 	margin: 1rem 0;
 	cursor: pointer;
 	transition: .5s;
-	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 .btn:hover{
 	background-position: right;
-}
-
-.btn1 {
-	position: absolute;
-	top: 30px;
-	display: block;
-	width: 100%;
-	height: 50px;
-	border-radius: 25px;
-	outline: none;
-	border: none;
-	background-image: linear-gradient(155.62deg, #0D4C92 -28.56%, #0D4C92 123.12%, #0D4C92 123.12%);
-	background-size: 200%;
-	font-size: 1.2rem;
-	color: #fff;
-	font-family: 'Poppins', sans-serif;
-	text-transform: uppercase;
-	margin: 1rem 0;
-	cursor: pointer;
-	transition: .5s;
-	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25)
 }
 
 

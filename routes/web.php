@@ -20,6 +20,23 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('auth/login');
 });
+
+Route::get('/daftar', function () {
+    return view('auth/register');
+});
+
+Route::get('/karyawan', function () {
+    return view('layouts/beranda-admin');
+});
+
+Route::get('/notifikasi', function () {
+    return view('layouts/notifikasi');
+});
+
+Route::get('/tambah', function () {
+    return view('layouts/tambah');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
